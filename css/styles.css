@@ -1,0 +1,490 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+/* Começo do Fundo do Site*/
+body {
+	background-image: url(../imagem/Fundo.png);
+	background-attachment: fixed;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	overflow-x: hidden;
+	padding-top: 120px;
+}
+
+/* Fim do  Fundo do Site*/
+
+/* Começo Cabeçalho fixo */
+#cabfixo {
+	background-color: rgb(92, 128, 10);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 35px;
+	height: 40px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	margin-left: 0px;
+}
+
+.cabfixoul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.cabfixoul li a {
+	letter-spacing: 3px;
+	margin-left: 10px;
+	color: #eee;
+
+}
+
+.cabfixoul li {
+	letter-spacing: 3px;
+	padding-right: -10px;
+	color: #eee;
+}
+
+.cabfixoul li p {
+	font-family: 'Courier New', Courier, monospace;
+	color: rgb(221, 14, 14);
+	text-decoration: none;
+}
+
+/* fim do Cabeçalho fixo */
+
+
+/* Começo da  Barra de Navegação*/
+a {
+	color: rgb(165, 22, 22);
+	text-decoration: none;
+	transition: 0.3s;
+
+}
+
+a:houver {
+	opacity: 10;
+}
+
+#main-navbar {
+	background: #fdfbfb;
+	color: #eee;
+	padding: 20px;
+	text-align: left;
+	margin-bottom: 100px;
+	position: sticky;
+	top: 35px;
+	padding-left: 40%;
+		
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: rgb(160, 177, 8);
+	height: 8vh;
+
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+}
+
+.nav-list li {
+	letter-spacing: 3px;
+	margin-left: 30px;
+
+}
+
+.navlist {
+	display: flex;
+
+}
+
+.navlist li {
+	letter-spacing: 3px;
+	padding-right: -10px;
+
+}
+
+.navlist li p {
+	font-family: 'Courier New', Courier, monospace;
+	color: rgb(24, 0, 0);
+	text-decoration: none;
+
+	/* Fim  Barra de Navegação*/
+}
+
+/* Começo Contêiner de apresentação de slides */
+.slideshow-container {
+	width: 100vm;
+	
+}
+
+/* Esconde as imagens por padrão */
+.mySlides {
+	display: none;
+}
+
+
+/* Botões Próximo e Anterior */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+
+/* Posicione o "próximo botão" à direita */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+
+/* Ao passar o mouse, adicione uma cor de fundo preta com um pouco de transparência */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Texto da legenda  
+  .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+  }
+  /*
+  
+  /* Texto do numero (1/3 etc) 
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+	*/
+
+
+/* Os pontos/balas/indicadores */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: rgb(31, 172, 13);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+/* Fim Contêiner de apresentação de slides */
+
+
+/* começo dos cards  pagina inicial*/
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.card {
+	border-radius: 5px;
+	box-shadow: 7px 7px 13px 0 rgba(240, 205, 205, 0.22);
+	padding: 20px;
+	margin: 20px;
+	width: 400px;
+	transition: all 0.3s ease-out;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	
+}
+
+.card:hover {
+/*	transform: translateY(-5px);*/
+	cursor: pointer;
+
+}
+
+.card p {
+	color: #a3a5ae;
+	font-size: 16px;
+}
+
+.card h2 {
+	color: #a3a5ae;
+	font-size: 16px;
+	margin: auto;
+	text-align: left;
+}
+
+.image {
+	float: right;
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.green {
+	border-left: 3px solid #3bb54a;
+
+}
+
+.blue {
+	border-left: 3px solid #4895ff;
+
+}
+
+.red {
+	border-left: 3px solid #b3404a;
+
+}
+
+/* fim dos cards da  pagina inicial*/
+
+
+/* começo Formulários de contato Pagina Contato */
+.box,.formcontato {
+	width: 50%;
+	margin: auto;
+}
+
+.box h2 {
+
+	color: #eee;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.main-form {
+	padding-left: 0px;
+	padding-bottom: 20px;
+	background: rgba(109, 98, 98, 0.685);
+	border-radius: 50px;
+	height: 550px;
+	margin-bottom: 120px;
+
+}
+
+.main-form div {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.main-form .form-group {
+	padding-bottom: 10px;
+	color: #eee;
+	
+	
+}
+
+.main-form .form-group input {
+	width: 100%;
+	text-align: left;
+	padding: 10px;
+}
+
+.main-form .form-group label {
+	display: block;
+}
+
+.button {
+	padding: 10px;
+	background-color: #333;
+	color: #eee;
+	border: none;
+
+	margin-left: 15px;
+	padding: 10px;
+}
+/* Fim Formulários de contato Pagina Contato */
+
+/* Começo do card onde fica informaçoes contato e dados pessoais */
+
+.formcontato {
+	background: rgba(109, 98, 98, 0.685);
+	border-radius: 20px;
+
+	display: flex;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	height: 300px;
+
+	margin: auto;
+	margin-bottom: 100px;
+	width: 60%;
+	height: auto;
+}
+
+.formcontato .coluna-31 {
+	width: 35%;
+	padding: auto;
+
+}
+
+
+.formcontato .coluna-32 {
+	width: 15%;
+	padding: auto;
+}
+
+.formcontato .coluna-3 {
+	width: 35%;
+	padding: auto;
+}
+
+.formcontato ul {
+	color: #eee;
+	text-align: left;
+	padding: 15px 30px;
+	line-height: 40px;
+	font-size: 22px;
+	list-style: none;
+}
+
+/* Fim do card onde fica informaçoes contato e dados pessoais */
+
+/* Botão fixo do watsaap*/
+.fixed-button {
+	background: rgba(51, 51, 51, 0.103);
+	background-image: url(../imagem/wat1.png);
+	background-repeat: no-repeat;
+	color: rgb(196, 7, 7);
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	margin: 15px;
+}
+/* Fim do Botão fixo do watsaap*/
+
+
+.carrinho {
+	background-image: url(../imagem/carrin.png);
+	background-repeat: no-repeat;
+	color: rgb(196, 7, 7);
+	border-radius: 20%;
+	width: 100px;
+	height: 60px;
+	position: fixed;
+	bottom: 0px;
+	top: -13px;
+	right: 0px;
+	margin: 15px;
+	margin-right: -40px;
+}
+
+/* Começo da Configuração da Pagina Login */
+
+/* Começo da Configuração da Pagina Login */
+
+
+.formlogin {
+	width: 300px;
+	margin: 200px auto;
+	text-align: center;
+	padding-bottom: 30%;
+
+}
+
+.formlogin,input {
+
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+	width: 250px;
+	height: 30px;
+
+
+}
+/* Fim  da Configuração da Pagina Login */
+
+
+/* Configuracao pagina painel do cliente */
+
+.formnomes{
+	
+	background-repeat: no-repeat;
+	color: #eee;
+	width: 45%;
+	height: 50%;
+	margin-left: 30%;
+	margin-top: 20px;
+	padding-top: 250px;
+
+}
+
+.formnomes , h2{
+	color: #eee;
+	text-align: center;
+	padding: 50px 30px;
+	
+
+}
+/* Fim da Configuracao pagina painel do cliente */
+
+/* Pagina em construção */
+
+
+footer {
+	text-align: center;
+	background: url("../imagem/foot.png");
+	padding: 20px 0;
+	color: #eee;
+	font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
